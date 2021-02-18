@@ -3,7 +3,6 @@ const app = express();
 const port = process.env.PORT || 3334
 const { create, destroy, update } = require('./schedules')
 
-
 app.use(express.json());
 
 app.post('/', create)
